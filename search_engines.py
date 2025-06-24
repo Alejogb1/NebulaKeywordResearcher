@@ -20,8 +20,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 import requests
-import config
-from file_writter import FileWriter as fw
+from integrations.nebulakw import config
+from integrations.nebulakw.file_writter import FileWriter as fw
 
 
 class SearchEngineSuggestions:

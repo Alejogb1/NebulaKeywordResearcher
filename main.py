@@ -24,6 +24,8 @@ from file_writter import FileWriter as FW
 from string import ascii_lowercase
 import config
 import sys
+import os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 
 try:
     seed_kws = open(config.input_file, encoding='utf-8')
@@ -70,4 +72,3 @@ else:
     with open(config.output_file, encoding='utf-8') as out_f:
         print(f'File {config.output_file} has been created, '
               f'{len(out_f.readlines())} unique keywords found.')
-
